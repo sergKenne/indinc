@@ -7,10 +7,6 @@
          <img class="header__logo-img" src="./assets/images/logo.jpeg" alt="logo">
          <span class="header__logo-text">ИНДИНС</span>
         </a>
-        <nav class="header__nav">
-         <!-- <router-link to="/">Home</router-link> |
-         <router-link to="/about">About</router-link> -->
-        </nav>
       </div>
     </header>
     <main>
