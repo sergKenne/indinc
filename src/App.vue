@@ -1,32 +1,48 @@
 <template>
+  
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header__logo">
+         <img class="header__logo-img" src="./assets/images/logo.jpeg" alt="logo">
+         <span class="header__logo-text">ИНДИНС</span>
+        </a>
+        <nav class="header__nav">
+         <!-- <router-link to="/">Home</router-link> |
+         <router-link to="/about">About</router-link> -->
+        </nav>
+      </div>
+    </header>
+    <main>
+      <router-view/>
+    </main>
+    <footer >
+
+    </footer>
+    
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+  .header {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #f9f9f9;
+    &__logo {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+    &__logo-img {
+      height: 42px;
+      width: 42px;
+      border-radius: 50%;
+    }
+    &__logo-text {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 500;
     }
   }
-}
 </style>
